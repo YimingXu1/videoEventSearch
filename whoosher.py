@@ -15,6 +15,7 @@ def readFromFile(filename) :
     with open(filename, "r") as f :
         line = f.readline()
         joda_string += line
+        print joda_string
     captionList = eval(joda_string)
     for s in captionList :
         listOfCaptions.append(s)
